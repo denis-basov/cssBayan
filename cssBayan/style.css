@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: rgb(86, 2, 2);
+    color: #000;
 }
 
 html {
@@ -12,73 +12,133 @@ html {
 
 
 .container {
-    margin: 10px auto;
-    width: 500px;
+    margin: 0 auto;
+    max-width: 120rem;
+    height: 200vh;
+    transition: all 0.5s;
 }
 
 .container:hover {
-    color: blueviolet;
+    background-color: blueviolet;
+}
+
+
+
+.bayan-container {
+    background-color: rgb(137, 197, 250);
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+
+
+.bayan-container h1 {
+    color: rgb(86, 2, 2);
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 2px solid #d0d0d0;
 }
 
 .bayan {
-    background-color: rgb(137, 197, 250);
-    width: 500px;
-    text-align: center;
-    font-size: 25px;
-    height: 2.85vh;
+    font-size: 3rem;
+    height: 7.8vh;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
     overflow: hidden;
     transition: all 0.5s;
 }
 
+.bayan:hover {
+    height: 70vh;
+}
+
 .bayan .title {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 2px solid #d0d0d0;
+    margin-bottom: 1rem;
 }
 
-.title p {
+.title i {
     transition: all 0.5s;
-}
-
-.bayan:hover {
-    height: 37vh;
 }
 
 .bayan:hover .title i {
     transform: rotate(90deg);
 }
 
+.bayan .content {
+    width: 60rem;
+    margin: 0 auto;
+}
 
-
-.bayan img {
-    width: 80%;
+.bayan .content img {
+    width: 100%;
+    border-radius: 1rem;
 }
 
 
 /* клики */
+
+
+/* изменение положения иконки */
+#bayan-1:target~.bayan-1 .title i {
+    transform: rotate(90deg);
+}
+
+#bayan-2:target~.bayan-2 .title i {
+    transform: rotate(90deg);
+}
+
+#bayan-3:target~.bayan-3 .title i {
+    transform: rotate(90deg);
+}
+
+#bayan-4:target~.bayan-4 .title i {
+    transform: rotate(90deg);
+}
+
+#bayan-5:target~.bayan-5 .title i {
+    transform: rotate(90deg);
+}
+
+#bayan-6:target~.bayan-6 .title i {
+    transform: rotate(90deg);
+}
+
+#bayan-7:target~.bayan-7 .title i {
+    transform: rotate(90deg);
+}
+
+/* изменение высоты блока */
 #bayan-1:target~.bayan.bayan-1 {
-    height: 37vh;
+    height: 70vh;
 }
 
 #bayan-2:target~.bayan.bayan-2 {
-    height: 37vh;
+    height: 70vh;
 }
 
 #bayan-3:target~.bayan.bayan-3 {
-    height: 37vh;
+    height: 70vh;
 }
 
 #bayan-4:target~.bayan.bayan-4 {
-    height: 37vh;
+    height: 70vh;
 }
 
 #bayan-5:target~.bayan.bayan-5 {
-    height: 37vh;
+    height: 70vh;
 }
 
 #bayan-6:target~.bayan.bayan-6 {
-    height: 37vh;
+    height: 70vh;
 }
 
 #bayan-7:target~.bayan.bayan-7 {
-    height: 37vh;
+    height: 70vh;
 }
