@@ -2,14 +2,83 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(86, 2, 2);
 }
 
 html {
     font-size: 62.5%;
 }
 
-main {
-    max-width: 120rem;
-    margin: 0 auto;
-    background-color: aliceblue;
+
+.container {
+    margin: 10px auto;
+    width: 500px;
+}
+
+.container:hover {
+    color: blueviolet;
+}
+
+.bayan {
+    background-color: rgb(137, 197, 250);
+    width: 500px;
+    text-align: center;
+    font-size: 25px;
+    height: 2.85vh;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.bayan .title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title p {
+    transition: all 0.5s;
+}
+
+.bayan:hover {
+    height: 37vh;
+}
+
+.bayan:hover .title i {
+    transform: rotate(90deg);
+}
+
+
+
+.bayan img {
+    width: 80%;
+}
+
+
+/* клики */
+#bayan-1:target~.bayan.bayan-1 {
+    height: 37vh;
+}
+
+#bayan-2:target~.bayan.bayan-2 {
+    height: 37vh;
+}
+
+#bayan-3:target~.bayan.bayan-3 {
+    height: 37vh;
+}
+
+#bayan-4:target~.bayan.bayan-4 {
+    height: 37vh;
+}
+
+#bayan-5:target~.bayan.bayan-5 {
+    height: 37vh;
+}
+
+#bayan-6:target~.bayan.bayan-6 {
+    height: 37vh;
+}
+
+#bayan-7:target~.bayan.bayan-7 {
+    height: 37vh;
 }
