@@ -22,6 +22,10 @@ html {
     background-color: blueviolet;
 }
 
+.container:hover h1 {
+    color: blueviolet;
+}
+
 
 
 .bayan-container {
@@ -53,6 +57,16 @@ html {
 
 .bayan:hover {
     height: 70vh;
+    background-color: rgb(115, 185, 247);
+    border-radius: 1rem;
+}
+
+.bayan:hover .title p {
+    color: rgb(86, 2, 2);
+}
+
+.bayan:hover .title i {
+    color: rgb(86, 2, 2);
 }
 
 .bayan .title {
