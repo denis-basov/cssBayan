@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Caveat', cursive;
 }
 
 
@@ -26,6 +29,10 @@ html {
     color: blueviolet;
 }
 
+.container:hover .title i {
+    opacity: 1;
+}
+
 
 
 .bayan-container {
@@ -42,12 +49,12 @@ html {
     font-size: 4rem;
     text-align: center;
     padding: 2rem 0;
-    border-bottom: 2px solid #d0d0d0;
+    border-bottom: 0.2rem solid #d0d0d0;
 }
 
 .bayan {
     font-size: 3rem;
-    height: 7.8vh;
+    height: 9.2vh;
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
@@ -56,28 +63,35 @@ html {
 }
 
 .bayan:hover {
-    height: 70vh;
+    height: 85vh;
     background-color: rgb(115, 185, 247);
     border-radius: 1rem;
 }
 
+.bayan .title p {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .bayan:hover .title p {
-    color: rgb(86, 2, 2);
+    color: rgb(167, 0, 0);
 }
 
 .bayan:hover .title i {
-    color: rgb(86, 2, 2);
+    color: rgb(167, 0, 0);
 }
 
 .bayan .title {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    border-bottom: 2px solid #d0d0d0;
-    margin-bottom: 1rem;
+    border-bottom: 0.2rem solid #d0d0d0;
+    margin-bottom: 5rem;
 }
 
 .title i {
+    opacity: 0;
     transition: all 0.5s;
 }
 
@@ -102,57 +116,187 @@ html {
 /* изменение положения иконки */
 #bayan-1:target~.bayan-1 .title i {
     transform: rotate(90deg);
+    color: rgb(167, 0, 0);
 }
 
 #bayan-2:target~.bayan-2 .title i {
     transform: rotate(90deg);
+    color: rgb(167, 0, 0);
 }
 
 #bayan-3:target~.bayan-3 .title i {
     transform: rotate(90deg);
+    color: rgb(167, 0, 0);
 }
 
 #bayan-4:target~.bayan-4 .title i {
     transform: rotate(90deg);
+    color: rgb(167, 0, 0);
 }
 
 #bayan-5:target~.bayan-5 .title i {
     transform: rotate(90deg);
+    color: rgb(167, 0, 0);
 }
 
 #bayan-6:target~.bayan-6 .title i {
     transform: rotate(90deg);
+    color: rgb(167, 0, 0);
 }
 
 #bayan-7:target~.bayan-7 .title i {
     transform: rotate(90deg);
+    color: rgb(167, 0, 0);
 }
 
 /* изменение высоты блока */
 #bayan-1:target~.bayan.bayan-1 {
-    height: 70vh;
+    height: 85vh;
 }
 
 #bayan-2:target~.bayan.bayan-2 {
-    height: 70vh;
+    height: 85vh;
 }
 
 #bayan-3:target~.bayan.bayan-3 {
-    height: 70vh;
+    height: 85vh;
 }
 
 #bayan-4:target~.bayan.bayan-4 {
-    height: 70vh;
+    height: 85vh;
 }
 
 #bayan-5:target~.bayan.bayan-5 {
-    height: 70vh;
+    height: 85vh;
 }
 
 #bayan-6:target~.bayan.bayan-6 {
-    height: 70vh;
+    height: 85vh;
 }
 
 #bayan-7:target~.bayan.bayan-7 {
-    height: 70vh;
+    height: 85vh;
+}
+
+
+/* media queries */
+
+/* tablet - 820x1180px */
+@media(max-width: 51.25em) {
+    html {
+        font-size: 45%;
+    }
+
+    .bayan {
+        height: 7vh;
+    }
+
+    /* изменение высоты блока */
+    #bayan-1:target~.bayan.bayan-1 {
+        height: 65vh;
+    }
+
+    #bayan-2:target~.bayan.bayan-2 {
+        height: 65vh;
+    }
+
+    #bayan-3:target~.bayan.bayan-3 {
+        height: 65vh;
+    }
+
+    #bayan-4:target~.bayan.bayan-4 {
+        height: 65vh;
+    }
+
+    #bayan-5:target~.bayan.bayan-5 {
+        height: 65vh;
+    }
+
+    #bayan-6:target~.bayan.bayan-6 {
+        height: 65vh;
+    }
+
+    #bayan-7:target~.bayan.bayan-7 {
+        height: 65vh;
+    }
+}
+
+/* smal tablet - 500x870px */
+@media(max-width: 31.25em) {
+    html {
+        font-size: 30%;
+    }
+
+    .bayan {
+        height: 4.8vh;
+    }
+
+    /* изменение высоты блока */
+    #bayan-1:target~.bayan.bayan-1 {
+        height: 43vh;
+    }
+
+    #bayan-2:target~.bayan.bayan-2 {
+        height: 43vh;
+    }
+
+    #bayan-3:target~.bayan.bayan-3 {
+        height: 43vh;
+    }
+
+    #bayan-4:target~.bayan.bayan-4 {
+        height: 43vh;
+    }
+
+    #bayan-5:target~.bayan.bayan-5 {
+        height: 43vh;
+    }
+
+    #bayan-6:target~.bayan.bayan-6 {
+        height: 43vh;
+    }
+
+    #bayan-7:target~.bayan.bayan-7 {
+        height: 43vh;
+    }
+}
+
+/* mobile - 320x568px */
+@media(max-width: 20em) {
+    html {
+        font-size: 25%;
+    }
+
+    .bayan {
+        height: 4vh;
+    }
+
+    /* изменение высоты блока */
+    #bayan-1:target~.bayan.bayan-1 {
+        height: 35vh;
+    }
+
+    #bayan-2:target~.bayan.bayan-2 {
+        height: 35vh;
+    }
+
+    #bayan-3:target~.bayan.bayan-3 {
+        height: 35vh;
+    }
+
+    #bayan-4:target~.bayan.bayan-4 {
+        height: 35vh;
+    }
+
+    #bayan-5:target~.bayan.bayan-5 {
+        height: 35vh;
+    }
+
+    #bayan-6:target~.bayan.bayan-6 {
+        height: 35vh;
+    }
+
+    #bayan-7:target~.bayan.bayan-7 {
+        height: 35vh;
+    }
 }
